@@ -1,12 +1,11 @@
-from data_models.title import Title
-from typing import List
+from data_models.role import Role
 class User():   
-    def __init__(self,id:int,userName:str,password:str,fullName:str,address:str,titleId:int,titles:List[Title]):
+    def __init__(self,id:int,userName:str,userPass:str,fullName:str,userAddress:str,roleId:int,role:Role):
         self.id=id
         self.userName=userName
-        self.password=password
+        self.userPass=userPass
         self.fullName=fullName
-        self.address=address
-        self.titleId=titleId
-        self.titles=titles
+        self.userAddress=userAddress
+        self.roleId=roleId
+        self.role=role
 
